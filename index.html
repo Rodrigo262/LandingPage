@@ -1,519 +1,717 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Rodrigo Díaz-Hellín — Dev</title>
+    <meta
+      name="description"
+      content="Portafolio de Rodrigo Díaz-Hellín — desarrollador Fullstack .NET, Mobile y entusiasta del diseño UI/UX."
+    />
+    <meta
+      name="theme-color"
+      content="#080b12"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/webp"
+      href="assets/img/icon.webp"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/img/icon.png"
+    />
 
-  <title>Rodrigo</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Favicons -->
-  <link href="assets/img/icon.png" rel="icon">
+    <!-- Main CSS -->
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+  </head>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+  <body>
+    <div
+      class="grid-bg"
+      aria-hidden="true"
+    ></div>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
-
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto" href="#about">About</a></li>
-        <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <h1>Rodrigo Díaz-Hellín</h1>
-      <h1></h1>
-      <h1></h1>
-      <h2>I'm .Net fullstack developer</h2>
-      <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+    <!-- Mobile Nav -->
+    <div
+      id="nav-mobile-overlay"
+      role="dialog"
+      aria-label="Menú"
+    >
+      <button
+        class="nav-close"
+        id="nav-close"
+        aria-label="Cerrar"
+      >
+        ✕
+      </button>
+      <a
+        href="#hero"
+        class="scrollto"
+        data-i18n="nav.home"
+        >Inicio</a
+      >
+      <a
+        href="#about"
+        class="scrollto"
+        data-i18n="nav.about"
+        >Sobre mí</a
+      >
+      <a
+        href="#resume"
+        class="scrollto"
+        data-i18n="nav.resume"
+        >Currículum</a
+      >
+      <a
+        href="#contact"
+        class="scrollto"
+        data-i18n="nav.contact"
+        >Contacto</a
+      >
     </div>
-  </section><!-- End Hero -->
 
-  <main id="main">
-
-    <!-- ======= About Me Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <span>About Me</span>
-          <h2>About Me</h2>
+    <!-- Header -->
+    <header id="header">
+      <nav id="navbar">
+        <a
+          href="#hero"
+          class="nav-logo"
+          >RDH</a
+        >
+        <div class="nav-links">
+          <a
+            href="#hero"
+            class="scrollto active"
+            data-i18n="nav.home"
+            >Inicio</a
+          >
+          <a
+            href="#about"
+            class="scrollto"
+            data-i18n="nav.about"
+            >Sobre mí</a
+          >
+          <a
+            href="#resume"
+            class="scrollto"
+            data-i18n="nav.resume"
+            >Currículum</a
+          >
+          <a
+            href="#contact"
+            class="scrollto"
+            data-i18n="nav.contact"
+            >Contacto</a
+          >
         </div>
+        <div class="nav-actions">
+          <button
+            class="btn-icon"
+            id="lang-toggle"
+            aria-label="Cambiar idioma"
+            title="Cambiar idioma"
+          >
+            ES
+          </button>
+          <button
+            class="mobile-toggle"
+            id="nav-open"
+            aria-label="Abrir menú"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-        <div class="row">
-          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
-          <div class="col-lg-8 d-flex flex-column align-items-stretch">
-            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Rodrigo</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.linkedin.com/in/rodrigodhv262</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Country:</strong> <span>Spain</span></li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>28</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Computer Science Engineer</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rodrigodhv@gmail.com</span></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row mt-n4">
-
-                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-clock" style="color: #2cbdee;"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Years of experience</strong> </p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-award" style="color: #ffb459;"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Awards</strong> Computer Science Engineering</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End .content-->
-
-            <div class="skills-content ps-lg-4">
-              <div class="progress">
-                <span class="skill">C# <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              
-              <div class="progress">
-                <span class="skill">.NET <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Xamarin <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">SQL <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="progress">
-                <span class="skill">XAML <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="progress">
-                <span class="skill">API REST <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="progress">
-                <span class="skill">SCRUM <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div
+            class="hero-badge"
+            data-i18n="hero.badge"
+          >
+            Disponible para proyectos
+          </div>
+          <h1 class="hero-title">
+            <span data-i18n="hero.title.line1">Rodrigo</span><br />
+            <span
+              class="accent-word"
+              data-i18n="hero.title.line2"
+              >Díaz-Hellín</span
+            >
+          </h1>
+          <p
+            class="hero-lead"
+            data-i18n="hero.lead"
+          >
+            Desarrollador Fullstack .NET y Mobile — C#, MAUI, Angular, APIs y
+            diseño de experiencia.
+          </p>
+          <div class="hero-ctas">
+            <a
+              href="#resume"
+              class="btn-primary scrollto"
+              data-i18n="hero.cta_cv"
+              >Ver CV</a
+            >
+            <a
+              href="#contact"
+              class="btn-outline scrollto"
+              data-i18n="hero.cta_contact"
+              >Contacto</a
+            >
+          </div>
+          <div class="hero-stack">
+            <span class="stack-pill">C#</span>
+            <span class="stack-pill">.NET</span>
+            <span class="stack-pill">MAUI</span>
+            <span class="stack-pill">Angular</span>
+            <span class="stack-pill">ASP.NET</span>
+            <span class="stack-pill">XAML</span>
+            <span class="stack-pill">SQL</span>
+            <span class="stack-pill">Azure</span>
+            <span class="stack-pill">Git</span>
           </div>
         </div>
-
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-inner">
+            <img
+              src="assets/img/me.webp"
+              alt="Rodrigo Díaz-Hellín"
+            />
+          </div>
+        </div>
       </div>
     </section>
-    <!-- End About Me Section -->
 
-    <!-- ======= My Resume Section ======= -->
-    <section id="resume" class="resume">
+    <div class="section-sep"></div>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="about"
+    >
       <div class="container">
-
-        <div class="section-title">
-          <span>My Resume</span>
-          <h2>My Resume</h2>
+        <div class="reveal">
+          <p
+            class="section-label"
+            data-i18n="about.tag"
+          >
+            Sobre mí
+          </p>
+          <h2
+            class="section-title"
+            data-i18n="about.title"
+          >
+            Sobre mí
+          </h2>
         </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Rodrigo Díaz-Hellín</h4>
-              <p><em>Fullstack developer with 4+ years of experience like a Mobile Developer with Xamarin.Forms, Back-End developer with ASP.NET, Front-End developer with XAML.</em></p>
-              <p>
-              <ul> 
-                <li>Spain</li>
-                <li>rodrigdhv@gmail.com</li>
-              </ul>
-              </p>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Computer Science Engineering</h4>
-              <h5>2013 - 2019</h5>
-              <p><em>Universidad de Castilla-La Mancha (UCLM)</em></p>
-              <p>Computer Science Engineering with specialty in Software Engineering.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Technical Baccalaureate</h4>
-              <h5>2011 - 2013</h5>
-              <p><em>IES Isabel Perillán y Quirós, Campo de Criptana (C.Real)</em></p>
+        <div class="about-grid">
+          <div class="glass about-info-card reveal delay-1">
+            <ul class="info-list">
+              <li class="info-row">
+                <span
+                  class="info-label"
+                  data-i18n="about.name_label"
+                  >Nombre</span
+                >
+                <span
+                  class="info-val"
+                  data-i18n="about.name"
+                  >Rodrigo Díaz‑Hellín</span
+                >
+              </li>
+              <li class="info-row">
+                <span
+                  class="info-label"
+                  data-i18n="about.site_label"
+                  >Sitio</span
+                >
+                <span class="info-val">
+                  <a
+                    href="https://linkedin.com/in/rodrigodhv262"
+                    target="_blank"
+                    rel="noopener"
+                    data-i18n="about.site"
+                    >linkedin.com/in/rodrigodhv262</a
+                  >
+                </span>
+              </li>
+              <li class="info-row">
+                <span
+                  class="info-label"
+                  data-i18n="about.country_label"
+                  >País</span
+                >
+                <span
+                  class="info-val"
+                  data-i18n="about.country"
+                  >España</span
+                >
+              </li>
+              <li class="info-row">
+                <span
+                  class="info-label"
+                  data-i18n="about.degree_label"
+                  >Titulación</span
+                >
+                <span
+                  class="info-val"
+                  data-i18n="about.degree"
+                  >Ingeniero Informático</span
+                >
+              </li>
+              <li class="info-row">
+                <span
+                  class="info-label"
+                  data-i18n="about.email_label"
+                  >Correo</span
+                >
+                <span class="info-val">
+                  <a href="mailto:rodrigodhv@gmail.com">rodrigodhv@gmail.com</a>
+                </span>
+              </li>
+            </ul>
+            <div class="stats-row">
+              <div class="glass stat-card">
+                <div class="stat-num">6+</div>
+                <div
+                  class="stat-label"
+                  data-i18n="about.exp_years_label"
+                >
+                  Años de experiencia
+                </div>
+              </div>
+              <div class="glass stat-card">
+                <div class="stat-num">1</div>
+                <div class="stat-label">
+                  <span data-i18n="about.awards_label">Reconocimiento</span>
+                  <span
+                    class="stat-sublabel"
+                    data-i18n="about.awards_sub"
+                    >Ing. Informática</span
+                  >
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Fullstack developer</h4>
-              <h5>2023 - Present</h5>
-              <p><em>LongoMatch, Barcelona, Spain </em></p>
-              <p>
-                <ul>
-                  <li>Development in Xamarin, .NET, Avalonia UI</li>
-                  <li>API Rest services</li>
-                  <li>Development in Rider con C# </li>
-                  <li>BBDD Management in Couchbase </li>
-                  <li>Test NUnit</li>
-                  <li>Design in XAML </li>
-                  <li>Scrum </li>
-                  <li>CI/CD in Github Actions</li>
-                </ul>
-              </p>
+
+          <div
+            class="glass skills-card"
+            id="skills-section"
+          >
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">C# / .NET</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-track">
+                <div
+                  class="skill-bar c"
+                  data-width="95"
+                ></div>
+              </div>
             </div>
-            <div class="resume-item">
-              <h4>Xamarin Developer & Back-End Developer</h4>
-              <h5>2021 - 2023</h5>
-              <p><em>Gesvatec S. L., Valencia, Spain</em></p>
-              <p>
-              <ul>
-                <li>Development in Xamarin, .NET</li>
-                <li>API Rest services</li>
-                <li>Development in VS con C# </li>
-                <li>BBDD SQLite Management  </li>
-                <li>BBDD Management in SQL Server </li>
-                <li>Test XUnit</li>
-                <li>Design in XAML </li>
-                <li>App Center </li>
-                <li>Scrum </li>
-                <li>CI/CD in Azure DevOps</li>
-              </ul>
-              </p>
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">Xamarin / MAUI</span>
+                <span class="skill-pct">100%</span>
+              </div>
+              <div class="skill-track">
+                <div
+                  class="skill-bar b"
+                  data-width="100"
+                ></div>
+              </div>
             </div>
-            <div class="resume-item">
-              <h4>Xamarin Developer & Back-End Developer</h4>
-              <h5>2019 - 2021</h5>
-              <p><em>Copermática S. L., Tomelloso, Spain</em></p>
-              <p>
-              <ul>
-                <li>Development in Xamarin, .NET</li>
-                <li>API Rest services</li>
-                <li>Development in VS con C# </li>
-                <li>BBDD SQLite Management  </li>
-                <li>BBDD Management in SQL Server </li>
-                <li>Test XUnit</li>
-                <li>Design in XAML </li>
-                <li>Scrum </li>
-              </ul>
-              </p>
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">Angular</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-track">
+                <div
+                  class="skill-bar b"
+                  data-width="75"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">XAML / UI</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track">
+                <div
+                  class="skill-bar c"
+                  data-width="90"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">API REST / ASP.NET</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-track">
+                <div
+                  class="skill-bar b"
+                  data-width="80"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">SQL / Couchbase</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-track">
+                <div
+                  class="skill-bar g"
+                  data-width="80"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">SCRUM / Agile</span>
+                <span class="skill-pct">100%</span>
+              </div>
+              <div class="skill-track">
+                <div
+                  class="skill-bar g"
+                  data-width="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-header">
+                <span class="skill-name">CI/CD (Azure / GitHub)</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-track">
+                <div
+                  class="skill-bar o"
+                  data-width="75"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="section-title">
-          <a href="assets/pdf/cv.pdf" download class="boton-descarga">Descargar CV</a>
-        </div>
-        
       </div>
     </section>
-    <!-- End My Resume Section -->
 
-    <!-- ======= My Services Section ======= -->
-    <section id="services" class="services">
+    <div class="section-sep"></div>
+
+    <!-- Resume -->
+    <section
+      id="resume"
+      class="resume"
+    >
       <div class="container">
-
-        <div class="section-title">
-          <span>Tools Experience</span>
-          <h2>Tools Experience</h2>
+        <div class="reveal">
+          <p
+            class="section-label"
+            data-i18n="resume.tag"
+          >
+            Currículum
+          </p>
+          <h2
+            class="section-title"
+            data-i18n="resume.title"
+          >
+            Currículum
+          </h2>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/c-sharp-logo.png"/>
-              <h1></h1>
-              <h4 class="title"><a>C#</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">90</span>
-                </div>  
+        <div class="resume-cols">
+          <div class="reveal delay-1">
+            <h3
+              class="resume-col-title"
+              data-i18n="resume.education_title"
+            >
+              Formación
+            </h3>
+            <div class="timeline-item">
+              <div class="tl-period">2013 – 2017</div>
+              <div class="tl-role">Computer Science Engineering</div>
+              <div class="tl-place">
+                Universidad de Castilla-La Mancha (UCLM)
+              </div>
+              <div class="tl-tags">
+                <span class="tl-tag">Software Engineering</span>
+                <span class="tl-tag">Algorithms</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-period">2011 – 2013</div>
+              <div class="tl-role">Technical Baccalaureate</div>
+              <div class="tl-place">IES Isabel Perillán y Quirós, C.Real</div>
+            </div>
+          </div>
+
+          <div class="reveal delay-2">
+            <h3
+              class="resume-col-title"
+              data-i18n="resume.experience_title"
+            >
+              Experiencia
+            </h3>
+
+            <div class="timeline-item">
+              <div class="tl-period">2024 – Actualidad</div>
+              <div class="tl-role">.NET Full Stack Developer</div>
+              <div class="tl-place">H&amp;K Tech · España</div>
+              <p class="tl-desc">
+                Desarrollo y evolución de aplicaciones móviles y web para la
+                aerolínea Volotea en un entorno ágil de CI/CD.
+              </p>
+              <div class="tl-tags">
+                <span class="tl-tag">MAUI .NET</span>
+                <span class="tl-tag">Angular</span>
+                <span class="tl-tag">SPA</span>
+                <span class="tl-tag">CI/CD</span>
+                <span class="tl-tag">Arquitectura</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-period">2023 – 2024</div>
+              <div class="tl-role">Fullstack Developer</div>
+              <div class="tl-place">LongoMatch · Barcelona, España</div>
+              <div class="tl-tags">
+                <span class="tl-tag">Xamarin</span>
+                <span class="tl-tag">Avalonia UI</span>
+                <span class="tl-tag">Couchbase</span>
+                <span class="tl-tag">NUnit</span>
+                <span class="tl-tag">GitHub Actions</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-period">2021 – 2023</div>
+              <div class="tl-role">Xamarin &amp; Back-End Dev</div>
+              <div class="tl-place">Gesvatec S.L. · Valencia, España</div>
+              <div class="tl-tags">
+                <span class="tl-tag">Xamarin</span>
+                <span class="tl-tag">SQLite</span>
+                <span class="tl-tag">Azure DevOps</span>
+                <span class="tl-tag">xUnit</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-period">2019 – 2021</div>
+              <div class="tl-role">Xamarin &amp; Back-End Dev</div>
+              <div class="tl-place">Copermática S.L. · Tomelloso, España</div>
+              <div class="tl-tags">
+                <span class="tl-tag">Xamarin</span>
+                <span class="tl-tag">SQL Server</span>
+                <span class="tl-tag">API REST</span>
               </div>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/xaml.png"/>
-              <h1></h1>
-              <h4 class="title"><a>XAML</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">80</span>
-                </div>  
-              </div>
-             
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/sql.png"/>
-              <h1></h1>
-              <h4 class="title"><a>SQL</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">70</span>
-                </div>  
-              </div>            
-            </div>
-          </div>
-
-          
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/net-framework.png"/>
-              <h1></h1>
-              <h4 class="title"><a >.NET</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">90</span>
-                </div>  
-              </div>            
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/xamarin.png"/>
-              <h1></h1>
-              <h4 class="title"><a >Xamarin</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">95</span>
-                </div>  
-              </div>            
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/visual-studio--v2.png"/>
-              <h1></h1>
-              <h4 class="title"><a >Visual Studio</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">90</span>
-                </div>  
-              </div>            
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/visual-studio-code-2019.png"/>
-              <h1></h1>
-              <h4 class="title"><a >Visual Studio Code</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">80</span>
-                </div>  
-              </div>            
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/null/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png"/>
-              <h1></h1>
-              <h4 class="title"><a >Postman</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">75</span>
-                </div>  
-              </div>            
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/azure-1.png"/>
-              <h1></h1>
-              <h4 class="title"><a>Azure Devops</Datag></a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">70</span>
-                </div>  
-              </div>           
-             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/git.png"/>
-              <h1></h1>
-              <h4 class="title"><a>Git</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">80</span>
-                </div>  
-              </div>            
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/css3.png"/>
-              <h1></h1>
-              <h4 class="title"><a>CSS</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">50</span>
-                </div>  
-              </div>            
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <img src="https://img.icons8.com/color/48/null/html-5--v1.png"/>
-              <h1></h1>
-              <h4 class="title"><a>HTML</a></h4>
-              <div class="containerCircle">
-                <div class="circular-progress">
-                  <span class="progress-value">50</span>
-                </div>  
-              </div>            
-            </div>
-          </div>
-
         </div>
-
+        <div class="download-row reveal">
+          <a
+            href="assets/pdf/cv.pdf"
+            download
+            class="btn-download"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line
+                x1="12"
+                y1="15"
+                x2="12"
+                y2="3"
+              />
+            </svg>
+            <span data-i18n="resume.download">Descargar CV (PDF)</span>
+          </a>
+        </div>
       </div>
     </section>
-    <!-- End My Services Section -->
 
-    <!-- ======= Contact Me Section ======= -->
-    <section id="contact" class="contact">
+    <div class="section-sep"></div>
+
+    <!-- Tools -->
+    <section
+      id="services"
+      class="services"
+    >
       <div class="container">
-
-        <div class="section-title">
-          <span>Contact Me</span>
-          <h2>Contact Me</h2>
+        <div class="reveal">
+          <p
+            class="section-label"
+            data-i18n="services.tag"
+          >
+            Herramientas
+          </p>
+          <h2
+            class="section-title"
+            data-i18n="services.title"
+          >
+            Herramientas y tecnologías
+          </h2>
         </div>
+        <div
+          class="tools-grid"
+          id="tools-grid"
+        >
+          <!-- Generado por main.js -->
+        </div>
+      </div>
+    </section>
 
-        <div class="row">
+    <div class="section-sep"></div>
 
-          <div class="col-lg-12">
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-share-alt"></i>
-                  <h3>Social Profiles</h3>
-                  <div class="social-links">
-                    <a href="https://twitter.com/Rodrigodhv" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/rodrigodhv262" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/Rodrigo262" class="github"><i class="bi bi-github"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email Me</h3>
-                  <a href="mailto: rodrigodhv@gmail.com" class="">rodrigodhv@gmail.com</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bxl-twitter"></i>
-                  <h3>Follow Me</h3>
-                  <a href="https://twitter.com/Rodrigodhv" class="">Twitter</a>
-                </div>
-              </div>
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="contact"
+    >
+      <div class="container">
+        <div class="reveal">
+          <p
+            class="section-label"
+            data-i18n="contact.tag"
+          >
+            Contacto
+          </p>
+          <h2
+            class="section-title"
+            data-i18n="contact.title"
+          >
+            Contacto
+          </h2>
+        </div>
+        <div class="contact-grid">
+          <a
+            href="mailto:rodrigodhv@gmail.com"
+            class="glass contact-card reveal delay-1"
+          >
+            <div class="contact-icon blue">✉️</div>
+            <div
+              class="contact-label"
+              data-i18n="contact.email_label"
+            >
+              Email
             </div>
-          </div>
+            <div class="contact-val">rodrigodhv@gmail.com</div>
+          </a>
+          <a
+            href="https://linkedin.com/in/rodrigodhv262"
+            target="_blank"
+            rel="noopener"
+            class="glass contact-card reveal delay-2"
+          >
+            <div class="contact-icon purple">💼</div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-val">rodrigodhv262</div>
+          </a>
+          <a
+            href="https://github.com/Rodrigo262"
+            target="_blank"
+            rel="noopener"
+            class="glass contact-card reveal delay-3"
+          >
+            <div class="contact-icon green">⌥</div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-val">Rodrigo262</div>
+          </a>
         </div>
       </div>
-    </section><!-- End Contact Me Section -->
+    </section>
 
-  </main>
-  <!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Rodrigo Díaz-Hellín</h3>
-      <div class="social-links">
-        <a href="https://twitter.com/Rodrigodhv" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/rodrigodhv262" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="mailto: rodrigodhv@gmail.com" class="linkedin"><i class="bx bxl-gmail"></i></a>
-        <a href="https://github.com/Rodrigo262" class="linkedin"><i class="bx bxl-github"></i></a>
-
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <span class="footer-brand">Rodrigo Díaz-Hellín</span>
+        <span
+          class="footer-copy"
+          data-i18n="footer.copyright"
+          >&copy; 2026 Rodrigo Díaz-Hellín. Todos los derechos reservados.</span
+        >
+        <div class="footer-social">
+          <a
+            href="https://linkedin.com/in/rodrigodhv262"
+            class="social-btn"
+            aria-label="LinkedIn"
+            >in</a
+          >
+          <a
+            href="https://github.com/Rodrigo262"
+            class="social-btn"
+            aria-label="GitHub"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.12.82-.26.82-.58v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.74-1.33-1.74-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Rodrigo</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+    </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS (counters, etc.) -->
+    <script
+      src="assets/vendor/purecounter/purecounter_vanilla.js"
+      defer
+    ></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
+    <!-- Main JS -->
+    <script
+      src="js/main.js"
+      defer
+    ></script>
+  </body>
 </html>
